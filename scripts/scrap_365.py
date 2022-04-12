@@ -148,12 +148,17 @@ def append_csv(df):
 if __name__ == "__main__":
     locale.setlocale(locale.LC_ALL, 'pt-BR.UTF-8')
     campeonatos = {
-        "Premier League": "https://www.bet365.com/#/AC/B1/C1/D1002/E61683472/G40/",
-        "La Liga": "https://www.bet365.com/#/AC/B1/C1/D1002/E62271413/G40/",
-        "Brasileirao": "https://www.bet365.com/#/AC/B1/C1/D1002/E71022033/G40/",
-        "Bundesliga": "https://www.bet365.com/#/AC/B1/C1/D1002/E62233151/G40/",
-        "Serie A": "https://www.bet365.com/#/AC/B1/C1/D1002/E62863982/G40/",
-        "Ligue 1": "https://www.bet365.com/#/AC/B1/C1/D1002/E62341993/G40/"
+        # "Premier League": "https://www.bet365.com/#/AC/B1/C1/D1002/E61683472/G40/",
+        # "La Liga": "https://www.bet365.com/#/AC/B1/C1/D1002/E62271413/G40/",
+        # "Brasileirao": "https://www.bet365.com/#/AC/B1/C1/D1002/E71022033/G40/",
+        # "Bundesliga": "https://www.bet365.com/#/AC/B1/C1/D1002/E62233151/G40/",
+        # "Serie A": "https://www.bet365.com/#/AC/B1/C1/D1002/E62863982/G40/",
+        # "Ligue 1": "https://www.bet365.com/#/AC/B1/C1/D1002/E62341993/G40/",
+        "Libertadores": "https://www.bet365.com/#/AC/B1/C1/D1002/E70836857/G40/",
+        "Champions League": "https://www.bet365.com/#/AC/B1/C1/D1002/E64406669/G40/",
+        "Sul-Americana": "https://www.bet365.com/#/AC/B1/C1/D1002/E71750612/G40/",
+        "Europa League": "https://www.bet365.com/#/AC/B1/C1/D1002/E64407176/G40/",
+        "Conference League": "https://www.bet365.com/#/AC/B1/C1/D1002/E64412308/G40/"
     }
     Bet365(campeonatos)
 
