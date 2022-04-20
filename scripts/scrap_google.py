@@ -16,7 +16,7 @@ class Google:
         self.df_full = pd.read_csv(self.csv_path)
         self.df_full["date"] = pd.to_datetime(self.df_full["date"]).dt.date
 
-        self.df = self.df_full[self.df_full["date"] < pd.Timestamp(datetime.now())]
+        self.df = self.df_full[(self.df_full["date"] < pd.Timestamp(datetime.now())) & (self.df_full["winner"].isnull())]
 
         options = webdriver.ChromeOptions()
         options.add_argument("start-maximized")
@@ -30,6 +30,8 @@ class Google:
         time.sleep(3)
 
         self.search_games()
+
+        self.chrome.close()
 
     def search_games(self):
         for index, row in self.df.iterrows():
