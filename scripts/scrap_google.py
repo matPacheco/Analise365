@@ -41,6 +41,7 @@ class Google:
             search_input.clear()
 
             search_str = row["home"] + " x " + row["away"]
+            print(search_str)
             search_input.send_keys(search_str)
             search_input.send_keys(Keys.ENTER)
 
